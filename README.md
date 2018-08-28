@@ -1,3 +1,7 @@
+#update
+
+While using /csv2json endpoint, set key name of the file as `file`.
+
 #test-setup
 
 This repo contains a broken server setup you are expected to fix. The server then needs to give the correct responses to the below questions. 
