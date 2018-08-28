@@ -17,6 +17,9 @@ async function start() {
 
     try {
         await server.start();
+        server.events.on('response', function (request) {
+            console.log(`method=${request.method}, path=${request.url.path}, responseTimeMs=${request.info.responded - request.info.received}, statusCode=${request.response.statusCode}`);
+        });
     }
     catch (err) {
         console.log(err);
